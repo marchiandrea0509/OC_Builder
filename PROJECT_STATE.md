@@ -5,7 +5,7 @@ Build robust multi-step project workflow across dashboard and Telegram
 Current phase
 Agent architecture setup
 Last successful step
-Created dedicated ocbuilder agent and PROJECT_STATE.md
+Captured the initial project state for OpenClaw tool building
 Next step
 Decide Telegram coexistence strategy
 Blockers
