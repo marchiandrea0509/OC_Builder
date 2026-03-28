@@ -9,6 +9,6 @@ Created dedicated ocbuilder agent and PROJECT_STATE.md
 Next step
 Decide Telegram coexistence strategy
 Blockers
-No blockers.
+Telegram bindings are only account-level in current CLI
 Notes
 Initialized state content during workflow test.
