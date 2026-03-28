@@ -7,7 +7,7 @@ Agent architecture setup
 Last successful step
 Created dedicated ocbuilder agent and PROJECT_STATE.md
 Next step
-Define the initial architecture components and interfaces across dashboard and Telegram.
+Decide Telegram coexistence strategy
 Blockers
 No blockers.
 Notes
