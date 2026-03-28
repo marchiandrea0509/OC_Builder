@@ -1,7 +1,7 @@
 Project
 OpenClaw tool building
 Goal
-Verify the required read-then-update project-state workflow is working.
+Build robust multi-step project workflow across dashboard and Telegram
 Current phase
 Workflow validation
 Last successful step
