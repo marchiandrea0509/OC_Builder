@@ -1,5 +1,5 @@
 Project
-Project-state workflow test
+OpenClaw tool building
 Goal
 Verify the required read-then-update project-state workflow is working.
 Current phase
