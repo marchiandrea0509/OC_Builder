@@ -11,4 +11,4 @@ Decide Telegram coexistence strategy
 Blockers
 Telegram bindings are only account-level in current CLI
 Notes
-Initialized state content during workflow test.
+TUI multiline paste is fragmented, so short prompts are safer
