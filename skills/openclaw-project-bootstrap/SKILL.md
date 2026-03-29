@@ -7,6 +7,8 @@ description: Bootstrap a new OpenClaw project agent with a dedicated workspace, 
 
 Use this skill to create or verify a practical v1 OpenClaw project setup. Prefer standard OpenClaw mechanisms, keep automation light, and stop on ambiguous or conflicting state.
 
+Use `scripts/bootstrap_project.py` for the mechanical parts when you want more deterministic execution. The script handles agent create/verify, continuity-file seeding, validation, and Discord **prepare** planning. Keep Discord **apply** as an explicit agent-driven/config-patch step rather than hiding it inside the script.
+
 ## Required inputs
 
 Collect these before making changes:
@@ -68,6 +70,8 @@ If the agent already exists:
 
 ### 3. Create or verify the agent
 
+For a more mechanical execution path, prefer `scripts/bootstrap_project.py` with the project inputs. It is the default helper for v1 bootstrap runs when local script execution is available.
+
 If the agent does not exist, create it with the CLI:
 
 ```bash
@@ -123,6 +127,8 @@ Behavior by mode:
 
 - `prepare`: compute the exact patch and report it without writing config
 - `apply`: look up the relevant schema paths, then patch config
+
+The companion script supports `prepare` planning only. For `apply`, stay in the normal agent workflow and use `gateway config.patch` explicitly.
 
 When applying:
 
@@ -181,6 +187,7 @@ Stop and ask when:
 
 ## Resources
 
+- `scripts/bootstrap_project.py` — mechanical helper for agent create/verify, continuity-file seeding, validation, and Discord prepare-plan generation
 - `references/discord-room-binding.md` — exact v1 Discord room routing pattern
 - `references/validation-checklist.md` — canonical PASS/WARN/FAIL checklist
 - `assets/PROJECT_STATE.md` — continuity template
