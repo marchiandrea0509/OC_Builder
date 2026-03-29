@@ -5,9 +5,9 @@ description: Bootstrap a new OpenClaw project agent with a dedicated workspace, 
 
 # OpenClaw Project Bootstrap
 
-Use this skill to create or verify a practical v1 OpenClaw project setup. Prefer standard OpenClaw mechanisms, keep automation light, and stop on ambiguous or conflicting state.
+Use this skill to create or verify a practical v2 OpenClaw project setup. Prefer standard OpenClaw mechanisms, keep automation light, and stop on ambiguous or conflicting state.
 
-Use `scripts/bootstrap_project.py` for the mechanical parts when you want more deterministic execution. The script handles agent create/verify, continuity-file seeding, validation, and Discord **prepare** planning. Keep Discord **apply** as an explicit agent-driven/config-patch step rather than hiding it inside the script.
+Use `scripts/bootstrap_project.py` for the mechanical parts when you want more deterministic execution. The script handles agent create/verify, continuity-file seeding, validation, and Discord **prepare/apply** handling. `apply` is explicit and guarded because it writes config and restarts the Gateway.
 
 ## Required inputs
 
@@ -25,6 +25,7 @@ Optional inputs:
 - `discordChannelId` — required for Discord room setup
 - `discordAccountId` — default to `default`
 - `discordMode` — `prepare` or `apply` (default to `prepare` unless the user explicitly wants config changed)
+- `yes` / explicit confirmation flag — required for `apply` because it writes config and restarts the Gateway
 
 ## Operating rules
 
@@ -70,7 +71,7 @@ If the agent already exists:
 
 ### 3. Create or verify the agent
 
-For a more mechanical execution path, prefer `scripts/bootstrap_project.py` with the project inputs. It is the default helper for v1 bootstrap runs when local script execution is available.
+For a more mechanical execution path, prefer `scripts/bootstrap_project.py` with the project inputs. It is the default helper for v2 bootstrap runs when local script execution is available.
 
 If the agent does not exist, create it with the CLI:
 
@@ -126,9 +127,9 @@ Do **not** rely on `openclaw agents bind` for room-specific routing. That comman
 Behavior by mode:
 
 - `prepare`: compute the exact patch and report it without writing config
-- `apply`: look up the relevant schema paths, then patch config
+- `apply`: merge the new route/allowlist into live config, patch it with `baseHash`, restart, and verify after restart
 
-The companion script supports `prepare` planning only. For `apply`, stay in the normal agent workflow and use `gateway config.patch` explicitly.
+The companion script supports both `prepare` and `apply`. For `apply`, require explicit confirmation (`--yes`) because it patches config and restarts the Gateway.
 
 When applying:
 
@@ -136,8 +137,10 @@ When applying:
 - preserve unrelated bindings
 - deduplicate identical bindings
 - if the same Discord peer is already bound to another agent, stop and ask
+- fetch current config first so array fields such as `bindings` are merged safely in memory before patching
 - pass a human-readable `note` with `gateway config.patch`
 - remember that `gateway config.patch` triggers a restart automatically
+- verify the route and allowlist after the restart
 
 ### 6. Validate
 
@@ -171,7 +174,7 @@ Then list:
 
 ## Decision points
 
-### Use this as v1
+### Use this as v2
 
 Prefer this skill when the user wants a practical, robust bootstrap for a project agent and the Discord room already exists.
 
@@ -187,7 +190,7 @@ Stop and ask when:
 
 ## Resources
 
-- `scripts/bootstrap_project.py` — mechanical helper for agent create/verify, continuity-file seeding, validation, and Discord prepare-plan generation
+- `scripts/bootstrap_project.py` — mechanical helper for agent create/verify, continuity-file seeding, validation, and Discord prepare/apply handling
 - `references/discord-room-binding.md` — exact v1 Discord room routing pattern
 - `references/validation-checklist.md` — canonical PASS/WARN/FAIL checklist
 - `assets/PROJECT_STATE.md` — continuity template
