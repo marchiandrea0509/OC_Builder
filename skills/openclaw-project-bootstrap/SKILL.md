@@ -105,6 +105,7 @@ Behavior:
 Optional note for the final report:
 
 - mention whether standard OpenClaw workspace files such as `AGENTS.md`, `SOUL.md`, `USER.md`, `TOOLS.md`, and `IDENTITY.md` are present or missing
+- note that `openclaw agents add` may already seed the standard workspace baseline; verify before creating replacements
 - do not block v1 success on those files unless the user explicitly required full workspace seeding
 
 ### 5. Prepare or apply Discord room binding

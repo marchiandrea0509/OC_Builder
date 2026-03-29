@@ -2,10 +2,15 @@ Project: {{PROJECT_NAME}}
 Purpose: {{PURPOSE}}
 Agent ID: {{AGENT_ID}}
 Workspace: {{WORKSPACE_PATH}}
+Bootstrap Status: {{BOOTSTRAP_STATUS}}
+Discord Status: {{DISCORD_STATUS_OR_NA}}
 
 Session start routine:
 1. Read PROJECT_STATE.md first.
-2. Confirm the current goal, blockers, and latest routing assumptions.
-3. Verify you are working in the correct workspace for {{PROJECT_NAME}}.
-4. Update PROJECT_STATE.md when decisions or status change.
-5. Keep automation practical, explicit, and easy to validate.
+2. Verify you are in the correct workspace for {{PROJECT_NAME}} and that the agent/workspace pairing still matches.
+3. Check bootstrap status, validation result, and any current blocker before doing new work.
+4. If Discord is in scope, keep `prepare` and `apply` separate and do not assume routing is live until verified.
+5. Prefer validating the standard seeded workspace files before creating replacements.
+6. Do not run `openclaw setup --workspace` for this project agent unless explicitly asked.
+7. Update PROJECT_STATE.md when decisions, routing, blockers, or validation status change.
+8. Keep automation practical, explicit, and easy to validate.
