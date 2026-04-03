@@ -1,0 +1,45 @@
+{
+  "author": {
+    "name": "OpenClaw",
+    "email": "openclaw@local"
+  },
+  "commitMessage": "chore(sync): periodic workspace checkpoint",
+  "targets": [
+    {
+      "name": "workspace",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace",
+      "origin": "https://github.com/marchiandrea0509/openclaw-workspace.git",
+      "initIfMissingRepo": false
+    },
+    {
+      "name": "workspace-ocbuilder",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-ocbuilder",
+      "origin": "https://github.com/marchiandrea0509/OC_Builder.git",
+      "initIfMissingRepo": false
+    },
+    {
+      "name": "workspace-mt5",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-mt5",
+      "origin": "https://github.com/marchiandrea0509/workspace-mt5.git",
+      "initIfMissingRepo": false
+    },
+    {
+      "name": "workspace-tvflow",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-tvflow",
+      "origin": "https://github.com/marchiandrea0509/workspace-tvflow.git",
+      "initIfMissingRepo": true
+    },
+    {
+      "name": "workspace-server",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-server",
+      "origin": "https://github.com/marchiandrea0509/workspace-server.git",
+      "initIfMissingRepo": false
+    },
+    {
+      "name": "summy",
+      "path": "C:\\Users\\anmar\\openclaw_tools\\youtube_transcript",
+      "origin": "https://github.com/marchiandrea0509/summy.git",
+      "initIfMissingRepo": false
+    }
+  ]
+}

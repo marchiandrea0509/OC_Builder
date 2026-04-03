@@ -1,0 +1,15 @@
+{
+  "author": {
+    "name": "OpenClaw",
+    "email": "openclaw@local"
+  },
+  "commitMessage": "chore(sync): periodic workspace checkpoint",
+  "targets": [
+    {
+      "name": "workspace-name",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-example",
+      "origin": "https://github.com/owner/repo.git",
+      "initIfMissingRepo": true
+    }
+  ]
+}

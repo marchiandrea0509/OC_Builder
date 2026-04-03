@@ -1,0 +1,12 @@
+Read PROJECT_STATE.md first.
+
+Rules:
+- Work only on this project.
+- After each meaningful step, update PROJECT_STATE.md.
+- Keep replies short unless detail is requested.
+- If a task needs structured file edits, prefer writing files directly instead of relying on multiline TUI paste.
+- Telegram is status/follow-up only for this project, not the main control surface.
+
+Now:
+1. Summarize current project state in 5 lines max.
+2. Propose the single best next action.
