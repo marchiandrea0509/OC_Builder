@@ -26,6 +26,7 @@ Optional inputs:
 - `discordAccountId` — default to `default`
 - `discordMode` — `prepare` or `apply` (default to `prepare` unless the user explicitly wants config changed)
 - `yes` / explicit confirmation flag — required for `apply` because it writes config and restarts the Gateway
+- optional Git sync settings when the workspace should be remote-backed and checkpointed periodically
 
 ## Operating rules
 
@@ -142,7 +143,24 @@ When applying:
 - remember that `gateway config.patch` triggers a restart automatically
 - verify the route and allowlist after the restart
 
-### 6. Validate
+### 6. Optional Git remote and periodic sync
+
+Read `references/workspace-git-sync.md` when the user wants the workspace protected by periodic Git checkpointing.
+
+Use the bundled helpers for this pattern:
+
+- `scripts/setup_git_sync_targets.py` to initialize a missing repo, set/update `origin`, and set local Git identity if missing
+- `scripts/git_sync_workspaces.py` to run the safe commit/push workflow
+- `assets/workspace_git_sync.targets.template.json` as the template for future target lists
+
+Rules:
+
+- keep one repository per workspace
+- keep indexing separate from Git sync
+- do not auto-push when the branch is behind or diverged
+- report only when attention is needed
+
+### 7. Validate
 
 Read `references/validation-checklist.md` before the final report.
 
@@ -156,7 +174,7 @@ Minimum validation checks:
 - if Discord mode is `prepare`, the proposed patch is internally consistent
 - if Discord mode is `apply`, the relevant config entries exist after patching
 
-### 7. Report clearly
+### 8. Report clearly
 
 Use this exact structure in the final user-visible report:
 
@@ -191,7 +209,11 @@ Stop and ask when:
 ## Resources
 
 - `scripts/bootstrap_project.py` — mechanical helper for agent create/verify, continuity-file seeding, validation, and Discord prepare/apply handling
+- `scripts/setup_git_sync_targets.py` — initialize missing repos, set/update `origin`, and set local Git identity if missing
+- `scripts/git_sync_workspaces.py` — safe periodic commit/push runner for managed workspaces
 - `references/discord-room-binding.md` — exact v1 Discord room routing pattern
 - `references/validation-checklist.md` — canonical PASS/WARN/FAIL checklist
+- `references/workspace-git-sync.md` — periodic Git sync policy and indexing separation
 - `assets/PROJECT_STATE.md` — continuity template
 - `assets/SESSION_START.txt` — startup template
+- `assets/workspace_git_sync.targets.template.json` — template for future managed workspace sync target lists
