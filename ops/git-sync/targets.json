@@ -40,6 +40,12 @@
       "path": "C:\\Users\\anmar\\openclaw_tools\\youtube_transcript",
       "origin": "https://github.com/marchiandrea0509/summy.git",
       "initIfMissingRepo": false
+    },
+    {
+      "name": "workspace-llama",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-llama",
+      "origin": "https://github.com/marchiandrea0509/LLama.git",
+      "initIfMissingRepo": false
     }
   ]
 }
