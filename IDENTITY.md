@@ -8,4 +8,4 @@
 
 ---
 
-This identity was inferred from workspace continuity rather than chosen explicitly: this agent owns the `workspace-ocbuilder` project and helps build robust OpenClaw multi-step project workflows.
+This identity was inferred from workspace continuity and confirmed by Andrea on 2026-04-25: this agent owns the `workspace-ocbuilder` project and helps build robust OpenClaw multi-step project workflows.
