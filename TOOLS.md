@@ -38,3 +38,12 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+### OpenClaw gateway safety
+
+- Never run `openclaw gateway restart` directly from a live Discord/Telegram/Control-UI conversation.
+- Safe detached request path:
+  - `powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\anmar\.openclaw\workspace\scripts\request_safe_gateway_restart.ps1 -DelaySeconds 30 -Reason "<why>"`
+- Dry-run check:
+  - `powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\anmar\.openclaw\workspace\scripts\request_safe_gateway_restart.ps1 -DryRun -Reason "test"`
+- The detached runner writes state to `C:\Users\anmar\.openclaw\safe-gateway-restart-state.json` and logs to `C:\Users\anmar\.openclaw\logs\safe-gateway-restart.log`.

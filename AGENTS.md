@@ -53,6 +53,12 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+## Gateway Safety
+
+- Never run `openclaw gateway restart`, `openclaw gateway stop`, or other gateway-disrupting commands from a live Discord-routed, Telegram-routed, or Control UI chat session that depends on that same gateway for delivery.
+- If a gateway restart is truly needed, treat it as a self-disconnecting action: hand it off to an external watchdog/background task or tell the human plainly before doing it.
+- In live chat sessions, prefer diagnosis, config edits, and non-disruptive verification over restart-first behavior.
+
 ## External vs Internal
 
 **Safe to do freely:**
@@ -82,6 +88,7 @@ In group chats where you receive every message, be **smart about when to contrib
 - Something witty/funny fits naturally
 - Correcting important misinformation
 - Summarizing when asked
+- You completed diagnosis, a config change, or any meaningful tool action for the current live chat; in that case, always send a short visible outcome instead of ending silently
 
 **Stay silent (HEARTBEAT_OK) when:**
 
