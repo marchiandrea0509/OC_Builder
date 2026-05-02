@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-02T14:05:30.459Z",
+  "entries": {
+    "memory:memory/2026-04-03.md:1:17": {
+      "key": "memory:memory/2026-04-03.md:1:17",
+      "path": "memory/2026-04-03.md",
+      "startLine": 1,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "# 2026-04-03 - Built `openclaw-project-bootstrap` into a practical v2 reusable bootstrap workflow inside `workspace-ocbuilder`. It now supports: creating/verifying agents and dedicated workspaces, seeding continuity files, verifying CLI registration, preparing/applying Discord room bindings, and producing PASS/WARN/FAIL reports. A companion script `skills/openclaw-project-bootstrap/scripts/bootstrap_project.py` was implemented and tested. - Created and applied the real `mt5` project bootstrap: agent `mt5`, workspace `C:\\Users\\anmar\\.openclaw\\workspace-mt5`, continuity files seeded, and Discord channel `#mt5` bound live to the `mt5` agent. - Established a reusable Git sync pattern for manage",
+      "recallCount": 10,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9838342905044555,
+      "maxScore": 0.2947241604328155,
+      "firstRecalledAt": "2026-05-02T13:46:25.974Z",
+      "lastRecalledAt": "2026-05-02T14:05:30.459Z",
+      "queryHashes": [
+        "18d029067c88",
+        "1c6e9853cd16",
+        "1b86700b7937",
+        "bd8f1914b82f",
+        "52ce86b1102f",
+        "bd1cc77ea7a9",
+        "28645b98a47f",
+        "b9767e646ea0",
+        "7a79d7fe94a3",
+        "36b590e36a77"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "openclaw-project-bootstrap",
+        "workspace-ocbuilder",
+        "creating/verifying",
+        "preparing/applying",
+        "pass/warn/fail",
+        "workspace-mt5",
+        "built",
+        "openclaw"
+      ]
+    },
+    "memory:memory/2026-04-03.md:12:22": {
+      "key": "memory:memory/2026-04-03.md:12:22",
+      "path": "memory/2026-04-03.md",
+      "startLine": 12,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "- Configured Git remotes / repo setup for all requested workspaces and successfully completed an initial commit+push sync for all of them: `workspace`, `workspace-ocbuilder`, `workspace-mt5`, `workspace-tvflow` (new repo initialized), `workspace-server`, and `summy`. - Set up periodic workspace Git sync as an OpenClaw cron job: - job name: `Workspace Git Sync` - job id: `f88b4e1f-0afa-433a-b2d0-6d5c2c69a9a7` - schedule: `30 8,20 * * *` in `Europe/Berlin` (every 12 hours) - behavior: silent on success, post only failures - Created Discord failure-report thread for sync issues in `#ocbuilder`: - thread name: `Workspace Git Sync Watchdog` - thread id: `1489664601028034843` - Confirm",
+      "recallCount": 9,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4193043053150176,
+      "maxScore": 0.2463878571987152,
+      "firstRecalledAt": "2026-05-02T13:46:25.974Z",
+      "lastRecalledAt": "2026-05-02T14:05:30.459Z",
+      "queryHashes": [
+        "18d029067c88",
+        "1b86700b7937",
+        "bd8f1914b82f",
+        "52ce86b1102f",
+        "bd1cc77ea7a9",
+        "28645b98a47f",
+        "b9767e646ea0",
+        "7a79d7fe94a3",
+        "36b590e36a77"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "workspace-ocbuilder",
+        "workspace-mt5",
+        "workspace-tvflow",
+        "workspace-server",
+        "europe/berlin",
+        "failure-report",
+        "configured",
+        "git"
+      ]
+    },
+    "memory:memory/2026-04-26.md:1:8": {
+      "key": "memory:memory/2026-04-26.md:1:8",
+      "path": "memory/2026-04-26.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "# 2026-04-26 - Andrea confirmed: \"Soul good\" in Discord `#ocbuilder`. - Bootstrap completed for `workspace-ocbuilder`. - Existing identity remains confirmed: `ocbuilder` 🛠️, OpenClaw project-workflow builder / workspace familiar. - No further bootstrap edits were needed in `IDENTITY.md` or `USER.md`. - Next project step after bootstrap: write the architecture decision note defining ocbuilder as the control surface and Telegram as status/follow-up only.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.23304317593574522,
+      "maxScore": 0.23304317593574522,
+      "firstRecalledAt": "2026-05-02T13:46:25.974Z",
+      "lastRecalledAt": "2026-05-02T13:46:25.974Z",
+      "queryHashes": [
+        "18d029067c88"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "workspace-ocbuilder",
+        "project-workflow",
+        "identity.md",
+        "user.md",
+        "status/follow-up",
+        "andrea",
+        "confirmed",
+        "soul"
+      ]
+    },
+    "memory:memory/2026-04-25.md:1:11": {
+      "key": "memory:memory/2026-04-25.md:1:11",
+      "path": "memory/2026-04-25.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "# 2026-04-25 - Bootstrap follow-up in Discord `#ocbuilder`: Andrea asked to read workspace memory to find identity, task, and aim. - Found task/aim in `PROJECT_STATE.md`: project is OpenClaw tool building; goal is robust multi-step project workflow across dashboard and Telegram; current next step is an architecture decision note defining ocbuilder as control surface and Telegram as status/follow-up only. - Found safe shared user context in `memory/SHARED_FROM_MAIN.md`: Andrea, Europe/Berlin, prefers concise/direct/action-first help. - `IDENTITY.md` was blank, so inferred and wrote a provisional identity: name `ocbuilder`, OpenClaw project-workflow builder / workspace familiar, concise pract",
+      "recallCount": 8,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4983691990375516,
+      "maxScore": 0.24067636132240294,
+      "firstRecalledAt": "2026-05-02T13:46:25.974Z",
+      "lastRecalledAt": "2026-05-02T13:49:23.830Z",
+      "queryHashes": [
+        "18d029067c88",
+        "1c6e9853cd16",
+        "1b86700b7937",
+        "bd8f1914b82f",
+        "52ce86b1102f",
+        "bd1cc77ea7a9",
+        "28645b98a47f",
+        "b9767e646ea0"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "follow-up",
+        "task/aim",
+        "project-state.md",
+        "multi-step",
+        "status/follow-up",
+        "memory/shared-from-main.md",
+        "europe/berlin",
+        "concise/direct/action-first"
+      ]
+    },
+    "memory:memory/2026-04-26.md:1:10": {
+      "key": "memory:memory/2026-04-26.md:1:10",
+      "path": "memory/2026-04-26.md",
+      "startLine": 1,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "# 2026-04-26 - Andrea confirmed: \"Soul good\" in Discord `#ocbuilder`. - Bootstrap completed for `workspace-ocbuilder`. - Existing identity remains confirmed: `ocbuilder` 🛠️, OpenClaw project-workflow builder / workspace familiar. - No further bootstrap edits were needed in `IDENTITY.md` or `USER.md`. - Next project step after bootstrap: write the architecture decision note defining ocbuilder as the control surface and Telegram as status/follow-up only. - Postmortem: a reply in Discord `#ocbuilder` was received successfully, but OCBUILDER then tried to run `openclaw gateway restart` from that same live routed session and cut off its own delivery path before sending a final reply. Future gat",
+      "recallCount": 9,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.6835163354873657,
+      "maxScore": 0.2569866061210632,
+      "firstRecalledAt": "2026-05-02T13:46:26.115Z",
+      "lastRecalledAt": "2026-05-02T14:05:30.459Z",
+      "queryHashes": [
+        "1c6e9853cd16",
+        "1b86700b7937",
+        "bd8f1914b82f",
+        "52ce86b1102f",
+        "bd1cc77ea7a9",
+        "28645b98a47f",
+        "b9767e646ea0",
+        "7a79d7fe94a3",
+        "36b590e36a77"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "gateway",
+        "workspace-ocbuilder",
+        "project-workflow",
+        "identity.md",
+        "user.md",
+        "status/follow-up",
+        "andrea",
+        "confirmed"
+      ]
+    }
+  }
+}
