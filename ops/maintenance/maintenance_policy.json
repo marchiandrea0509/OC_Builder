@@ -1,0 +1,5 @@
+{
+  "compactThresholdPercent": 82,
+  "indexOutputFile": "workspace_index.json",
+  "indexMarkdownFile": "workspace_index.md"
+}

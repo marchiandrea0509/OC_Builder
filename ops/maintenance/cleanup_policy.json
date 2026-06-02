@@ -1,0 +1,14 @@
+{
+  "archiveAgeDays": 30,
+  "archiveRoot": "C:\\Users\\anmar\\.openclaw\\workspace-archives",
+  "candidateDirs": [
+    "logs",
+    "log",
+    "tmp",
+    "temp",
+    "generated",
+    "reports",
+    "artifacts",
+    "cache"
+  ]
+}
