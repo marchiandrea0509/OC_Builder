@@ -1,4 +1,4 @@
-Run the weekly workspace archive/cleanup pass and only report when attention is needed.
+Run the weekly archive/cleanup pass across all active workspaces and only report when attention is needed.
 
 Do exactly this:
 1. Run:
@@ -13,6 +13,7 @@ Do exactly this:
 6. If the script itself fails before producing JSON, reply with the first clear error line and keep it short.
 
 Notes:
+- The script checks every active workspace listed in the shared targets file.
 - The script archives only old untracked files from known disposable folders.
 - Tracked files are skipped.
 - The job should stay quiet on normal runs.

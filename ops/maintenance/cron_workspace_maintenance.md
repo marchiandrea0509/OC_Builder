@@ -1,4 +1,4 @@
-Run the periodic workspace maintenance sweep and only report when attention is needed.
+Run the periodic maintenance sweep across all active workspaces and only report when attention is needed.
 
 Do exactly this:
 1. Run:
@@ -13,6 +13,7 @@ Do exactly this:
 6. If the script itself fails before producing JSON, reply with the first clear error line and keep it short.
 
 Notes:
+- The script checks every active workspace listed in the shared targets file.
 - The script always refreshes the workspace index artifacts.
 - Compaction only runs when the configured disk-usage threshold is reached.
 - The job should stay quiet on normal runs.
