@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-06-14T09:31:46Z",
+  "overall": "PASS",
+  "archiveAgeDays": 30,
+  "archiveRoot": "C:\\Users\\anmar\\.openclaw\\workspace-archives",
+  "targets": [
+    {
+      "name": "workspace",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace",
+      "status": "PASS",
+      "notes": [
+        "no old disposable files needed archiving",
+        "skipped 9 tracked file(s)"
+      ],
+      "archivedCount": 0,
+      "archivedBytes": 0,
+      "skippedTrackedCount": 9,
+      "removedEmptyDirs": 0
+    },
+    {
+      "name": "workspace-ocbuilder",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-ocbuilder",
+      "status": "PASS",
+      "notes": [
+        "no old disposable files needed archiving"
+      ],
+      "archivedCount": 0,
+      "archivedBytes": 0,
+      "skippedTrackedCount": 0,
+      "removedEmptyDirs": 0
+    },
+    {
+      "name": "workspace-mt5",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-mt5",
+      "status": "PASS",
+      "notes": [
+        "no old disposable files needed archiving",
+        "skipped 145 tracked file(s)"
+      ],
+      "archivedCount": 0,
+      "archivedBytes": 0,
+      "skippedTrackedCount": 145,
+      "removedEmptyDirs": 0
+    },
+    {
+      "name": "workspace-tvflow",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-tvflow",
+      "status": "PASS",
+      "notes": [
+        "archived 1383 old file(s)",
+        "skipped 203 tracked file(s)"
+      ],
+      "archivedCount": 1383,
+      "archivedBytes": 203442275,
+      "skippedTrackedCount": 203,
+      "removedEmptyDirs": 177
+    },
+    {
+      "name": "workspace-server",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-server",
+      "status": "PASS",
+      "notes": [
+        "no old disposable files needed archiving"
+      ],
+      "archivedCount": 0,
+      "archivedBytes": 0,
+      "skippedTrackedCount": 0,
+      "removedEmptyDirs": 0
+    },
+    {
+      "name": "summy",
+      "path": "C:\\Users\\anmar\\openclaw_tools\\youtube_transcript",
+      "status": "PASS",
+      "notes": [
+        "no old disposable files needed archiving"
+      ],
+      "archivedCount": 0,
+      "archivedBytes": 0,
+      "skippedTrackedCount": 0,
+      "removedEmptyDirs": 0
+    },
+    {
+      "name": "workspace-llama",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-llama",
+      "status": "PASS",
+      "notes": [
+        "no old disposable files needed archiving",
+        "skipped 36 tracked file(s)"
+      ],
+      "archivedCount": 0,
+      "archivedBytes": 0,
+      "skippedTrackedCount": 36,
+      "removedEmptyDirs": 0
+    }
+  ],
+  "attention": [],
+  "needsAttention": false
+}
