@@ -1,5 +1,5 @@
 # Workspace Index
-Generated: 2026-06-20T19:01:18Z
+Generated: 2026-06-21T07:01:19Z
 Compact threshold: 82%
 
 - **workspace**
@@ -8,9 +8,9 @@ Compact threshold: 82%
   - Branch: `main`
   - Origin: `https://github.com/marchiandrea0509/openclaw-workspace.git`
   - Changes: 0
-  - Disk use: 52.85%
+  - Disk use: 53.16%
   - Compacted: no
-  - Note: disk usage 52.85% below threshold
+  - Note: disk usage 53.16% below threshold
 
 - **workspace-ocbuilder**
   - Path: `C:\Users\anmar\.openclaw\workspace-ocbuilder`
@@ -18,9 +18,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/OC_Builder.git`
   - Changes: 0
-  - Disk use: 52.85%
+  - Disk use: 53.16%
   - Compacted: no
-  - Note: disk usage 52.85% below threshold
+  - Note: disk usage 53.16% below threshold
 
 - **workspace-mt5**
   - Path: `C:\Users\anmar\.openclaw\workspace-mt5`
@@ -28,20 +28,19 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-mt5.git`
   - Changes: 0
-  - Disk use: 52.85%
+  - Disk use: 53.16%
   - Compacted: no
-  - Note: disk usage 52.85% below threshold
+  - Note: disk usage 53.16% below threshold
 
 - **workspace-tvflow**
   - Path: `C:\Users\anmar\.openclaw\workspace-tvflow`
   - Status: PASS
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-tvflow.git`
-  - Changes: 7
-  - Disk use: 52.85%
+  - Changes: 0
+  - Disk use: 53.16%
   - Compacted: no
-  - Note: 7 working-tree changes detected
-  - Note: disk usage 52.85% below threshold
+  - Note: disk usage 53.16% below threshold
 
 - **workspace-server**
   - Path: `C:\Users\anmar\.openclaw\workspace-server`
@@ -49,9 +48,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-server.git`
   - Changes: 0
-  - Disk use: 52.85%
+  - Disk use: 53.16%
   - Compacted: no
-  - Note: disk usage 52.85% below threshold
+  - Note: disk usage 53.16% below threshold
 
 - **summy**
   - Path: `C:\Users\anmar\openclaw_tools\youtube_transcript`
@@ -59,9 +58,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/summy.git`
   - Changes: 0
-  - Disk use: 52.85%
+  - Disk use: 53.16%
   - Compacted: no
-  - Note: disk usage 52.85% below threshold
+  - Note: disk usage 53.16% below threshold
 
 - **workspace-llama**
   - Path: `C:\Users\anmar\.openclaw\workspace-llama`
@@ -69,6 +68,6 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/LLama.git`
   - Changes: 0
-  - Disk use: 52.85%
+  - Disk use: 53.16%
   - Compacted: no
-  - Note: disk usage 52.85% below threshold
+  - Note: disk usage 53.16% below threshold
