@@ -1,0 +1,20 @@
+Analyze this latest MT5 LTH optimisation result ZIP.
+
+Please check:
+1. Whether the run completed successfully.
+2. Expected rows vs actual rows.
+3. Any failed, missing, incomplete, or suspicious jobs.
+4. The merged summary CSV.
+5. Best and worst parameter groups.
+6. Favorable percentage.
+7. Net profit, expected payoff, profit factor, trades, win rate, drawdown.
+8. Whether the result supports or weakens the tested edge hypothesis.
+9. Whether this benchmark is strong enough or if another reference run is required.
+
+Give:
+- A clear pass/fail judgement.
+- A concise interpretation.
+- The most important table(s).
+- The next recommended test.
+- Any issue in the orchestrator or exported files that should be fixed.
+

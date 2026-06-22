@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-13T15:08:09.209Z",
+  "updatedAt": "2026-06-22T14:11:02.045Z",
   "entries": {
     "memory:memory/2026-04-03.md:1:17": {
       "key": "memory:memory/2026-04-03.md:1:17",
@@ -159,13 +159,13 @@
       "endLine": 10,
       "source": "memory",
       "snippet": "# 2026-04-26 - Andrea confirmed: \"Soul good\" in Discord `#ocbuilder`. - Bootstrap completed for `workspace-ocbuilder`. - Existing identity remains confirmed: `ocbuilder` 🛠️, OpenClaw project-workflow builder / workspace familiar. - No further bootstrap edits were needed in `IDENTITY.md` or `USER.md`. - Next project step after bootstrap: write the architecture decision note defining ocbuilder as the control surface and Telegram as status/follow-up only. - Postmortem: a reply in Discord `#ocbuilder` was received successfully, but OCBUILDER then tried to run `openclaw gateway restart` from that same live routed session and cut off its own delivery path before sending a final reply. Future gat",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6835163354873657,
+      "totalScore": 1.8993593096733092,
       "maxScore": 0.2569866061210632,
       "firstRecalledAt": "2026-05-02T13:46:26.115Z",
-      "lastRecalledAt": "2026-05-02T14:05:30.459Z",
+      "lastRecalledAt": "2026-06-22T14:11:02.045Z",
       "queryHashes": [
         "1c6e9853cd16",
         "1b86700b7937",
@@ -175,10 +175,12 @@
         "28645b98a47f",
         "b9767e646ea0",
         "7a79d7fe94a3",
-        "36b590e36a77"
+        "36b590e36a77",
+        "d1bde50f8253"
       ],
       "recallDays": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-06-22"
       ],
       "conceptTags": [
         "gateway",
