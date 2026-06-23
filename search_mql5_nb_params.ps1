@@ -1,0 +1,1 @@
+Select-String -Path 'C:\Users\anmar\AppData\Roaming\MetaQuotes\Terminal\47AEB69EDDAD4D73097816C71FB25856\MQL5\**\*' -Pattern 'Nb','NATR','ATRmult','AvgBarsToExit','UseSessionEndExit','Stop_USD' -ErrorAction SilentlyContinue | ForEach-Object { "{0}:{1}: {2}" -f $_.Path, $_.LineNumber, $_.Line.Trim() }

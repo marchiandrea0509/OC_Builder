@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-22T14:11:02.045Z",
+  "updatedAt": "2026-06-22T18:33:10.014Z",
   "entries": {
     "memory:memory/2026-04-03.md:1:17": {
       "key": "memory:memory/2026-04-03.md:1:17",
@@ -191,6 +191,37 @@
         "status/follow-up",
         "andrea",
         "confirmed"
+      ]
+    },
+    "memory:memory/2026-06-22.md:1:7": {
+      "key": "memory:memory/2026-06-22.md:1:7",
+      "path": "memory/2026-06-22.md",
+      "startLine": 1,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "# 2026-06-22 - Copied the FIX56 MT5 orchestrator into `C:\\MT5_scripts` and ran it successfully. - Generated `C:\\Users\\anmar\\.openclaw\\workspace-tvflow\\tmp\\lth_zip_analysis.json` from `H:\\My Drive\\MT5_results_archive\\LTH_limited_results_FIX55B_CORE_RANDOM_EXIT_BENCHMARK_OPT_20260621_201238.zip`. - The benchmark was internally complete (1,620 rows, no missing/duplicate/suspicious rows) but the overall edge was weak / not robust: net profit was `-12,428.53`. - Strongest candidate pocket from that analysis was `Nb=19, NATR=73, ATRmult=3.15, AvgBarsToExit=6/8`, but it was still not strong enough to generalize.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40307804644107814,
+      "maxScore": 0.40307804644107814,
+      "firstRecalledAt": "2026-06-22T18:33:10.014Z",
+      "lastRecalledAt": "2026-06-22T18:33:10.014Z",
+      "queryHashes": [
+        "17acf44f81c5"
+      ],
+      "recallDays": [
+        "2026-06-22"
+      ],
+      "conceptTags": [
+        "mt5-scripts",
+        "workspace-tvflow",
+        "lth-zip-analysis.json",
+        "mt5-results-archive",
+        "missing/duplicate/suspicious",
+        "428.53",
+        "3.15",
+        "6/8"
       ]
     }
   }

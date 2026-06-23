@@ -1,0 +1,5 @@
+Get-ChildItem 'H:\My Drive\MT5_results_archive' -Directory -ErrorAction SilentlyContinue |
+  Where-Object { $_.Name -like 'LTH_limited_results_FIX56*' } |
+  Sort-Object LastWriteTime -Descending |
+  Select-Object -First 3 Name,LastWriteTime |
+  Format-Table -AutoSize

@@ -1,0 +1,11 @@
+from pathlib import Path
+path = Path(r'C:\MT5_scripts\FIX56_orchestrator.py')
+text = path.read_text(encoding='utf-8-sig')
+text = text.replace('EXPORT_BASE / f"LTH_limited_results_FIX56_CORE_RANDOM_EXIT_OPT_{stamp}"', 'EXPORT_BASE / f"LTH_limited_results_FIX56_CORE_RANDOM_EXIT_BENCHMARK_OPT_{stamp}"')
+text = text.replace('runner_FIX56_random_entry_exit_optimisation.log', 'runner_FIX56_core_random_exit_benchmark.log')
+text = text.replace('profile = BASE_PROFILE.format(\n            opt_csv_prefix=opt_csv_prefix,\n            run_name=run_name,\n            rsi_period=RSI_PERIOD,\n            rsi_os=RSI_OS,\n            rsi_ob=RSI_OB,\n            rsi_limit_atr_period=RSI_LIMIT_ATR_PERIOD,\n            rsi_limit_atr_mult=RSI_LIMIT_ATR_MULT,\n            **job,\n        )', 'profile = BASE_PROFILE.format(\n            opt_csv_prefix=opt_csv_prefix,\n            run_name=run_name,\n            **job,\n        )')
+text = text.replace('log("FIX56 core random-exit benchmark runner - OPTIMISATION MODE, CACHE-SAFE, LOW PRIORITY MT5")', 'log("FIX56 core random-exit benchmark runner - OPTIMISATION MODE, CACHE-SAFE, LOW PRIORITY MT5")')
+text = text.replace('log("RANDOM ENTRY: Seed optimised 1..200 for each direction scenario")', 'log("GRID: Nb=9/14/19, NATR=73/83/93, ATRmult=2.55/2.85/3.15, AvgBarsToExit=2/3/4/5/6/8, Seed=1..10")')
+text = text.replace('log("EXIT UNDER TEST: EuroNight exit, TRmult=0.91, Stop_USD=150, MaxBarsHeld=0")', 'log("EXIT UNDER TEST: EuroNight exit, TRmult=0.91, Stop_USD=150, MaxBarsHeld=0")')
+path.write_text(text, encoding='utf-8-sig', newline='\r\n')
+print(path)

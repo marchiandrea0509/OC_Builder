@@ -1,0 +1,1 @@
+Select-String -Path 'C:\MT5_scripts\*.py' -Pattern 'module-safe core EuroNight entry \+ random exit benchmark runner|FIX55B module-safe core EuroNight entry \+ random exit benchmark runner' -ErrorAction SilentlyContinue | ForEach-Object { "{0}:{1}: {2}" -f $_.Path, $_.LineNumber, $_.Line.Trim() }

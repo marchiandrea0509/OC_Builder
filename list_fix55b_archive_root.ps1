@@ -1,0 +1,1 @@
+Get-ChildItem 'H:\My Drive\MT5_results_archive\LTH_limited_results_FIX55B_CORE_RANDOM_EXIT_BENCHMARK_OPT_20260621_201238' -Force | Select-Object Name,Mode,Length,LastWriteTime | Format-Table -AutoSize

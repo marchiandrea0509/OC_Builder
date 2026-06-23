@@ -1,0 +1,1 @@
+Select-String -Path 'C:\MT5_scripts\run_lth_limited_test_FIX54_RANDOM_ENTRY_EXIT_OPTIMISATION_2022_GDRIVE_LOWPRIORITY.py' -Pattern 'ActiveModules','compile','module exchange','required modules','TestMode=' | ForEach-Object { "{0}:{1}: {2}" -f $_.Path, $_.LineNumber, $_.Line.Trim() }
