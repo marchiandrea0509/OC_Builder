@@ -86,18 +86,56 @@ public static class WinFocus {
     [WinFocus]::SetForegroundWindow($Proc.MainWindowHandle) | Out-Null
 }
 
-function Invoke-FilePicker {
-    param([System.Diagnostics.Process]$Proc, [string]$ResolvedZip)
+function Refresh-ChatGptThread {
+    param([System.Diagnostics.Process]$Proc)
+
+    # Refresh after navigating to the target conversation so ChatGPT loads the latest
+    # thread state before any file or prompt paste. This avoids stale-page branching.
+    $ws = New-Object -ComObject WScript.Shell
+    $ws.AppActivate($Proc.Id) | Out-Null
+    Start-Sleep -Milliseconds 400
+    $ws.SendKeys('{F5}')
+    Start-Sleep -Seconds 6
+}
+
+function Set-BridgeClipboard {
+    param(
+        [string]$Value,
+        [string]$Path
+    )
+
+    $lastError = $null
+    for ($i = 1; $i -le 8; $i++) {
+        try {
+            if ($PSBoundParameters.ContainsKey('Path')) {
+                Set-Clipboard -Path $Path
+            } else {
+                Set-Clipboard -Value $Value
+            }
+            return
+        } catch {
+            $lastError = $_
+            Start-Sleep -Milliseconds (250 * $i)
+        }
+    }
+    throw $lastError
+}
+
+function Click-Composer {
+    param([System.Diagnostics.Process]$Proc)
 
     $ws = New-Object -ComObject WScript.Shell
     $ws.AppActivate($Proc.Id) | Out-Null
-    Start-Sleep -Milliseconds 700
+    Start-Sleep -Milliseconds 350
 
     Add-Type -AssemblyName System.Windows.Forms
     Add-Type -AssemblyName System.Drawing
 
-    [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(900, 1008)
-    Start-Sleep -Milliseconds 150
+    $screen = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+    $clickX = [int]($screen.Width * 0.50)
+    $clickY = [int]($screen.Height * 0.86)
+    [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($clickX, $clickY)
+    Start-Sleep -Milliseconds 100
 
     Add-Type @"
 using System;
@@ -109,25 +147,26 @@ public static class MouseClickBridge {
     [MouseClickBridge]::mouse_event(0x0002, 0, 0, 0, [UIntPtr]::Zero)
     Start-Sleep -Milliseconds 80
     [MouseClickBridge]::mouse_event(0x0004, 0, 0, 0, [UIntPtr]::Zero)
-    Start-Sleep -Milliseconds 900
+    Start-Sleep -Milliseconds 250
+}
 
-    Set-Clipboard -Value ('script:document.querySelector("input[type=file]")?.click()')
-    Start-Sleep -Milliseconds 150
-    $ws.SendKeys('java')
-    Start-Sleep -Milliseconds 100
-    $ws.SendKeys('^v')
-    Start-Sleep -Milliseconds 150
-    $ws.SendKeys('{ENTER}')
-    Start-Sleep -Seconds 5
+function Invoke-FilePicker {
+    param([System.Diagnostics.Process]$Proc, [string]$ResolvedZip)
 
-    Set-Clipboard -Path $ResolvedZip
-    Start-Sleep -Milliseconds 300
-    $ws.SendKeys('%n')
-    Start-Sleep -Milliseconds 300
+    # Fast/reliable path: ChatGPT accepts a file object pasted directly into the composer.
+    # This avoids the fragile javascript: URL + Windows file picker sequence, which was slow
+    # and could silently leave only the prompt staged without the ZIP attached.
+    $ws = New-Object -ComObject WScript.Shell
+    Click-Composer -Proc $Proc
+    Set-BridgeClipboard -Path $ResolvedZip
+    Start-Sleep -Milliseconds 250
+    $ws.AppActivate($Proc.Id) | Out-Null
+    Start-Sleep -Milliseconds 150
     $ws.SendKeys('^v')
-    Start-Sleep -Milliseconds 300
-    $ws.SendKeys('{ENTER}')
-    Start-Sleep -Seconds 10
+
+    # Give ChatGPT time to create the upload chip. Small MT5 ZIPs usually chip in a few seconds;
+    # this remains conservative enough for Drive-backed paths without wasting the old 15s+ picker path.
+    Start-Sleep -Seconds 6
 }
 
 function Paste-Prompt {
@@ -135,7 +174,7 @@ function Paste-Prompt {
     $ws = New-Object -ComObject WScript.Shell
     $ws.AppActivate($Proc.Id) | Out-Null
     Start-Sleep -Milliseconds 700
-    Set-Clipboard -Value $PromptText
+    Set-BridgeClipboard -Value $PromptText
     Start-Sleep -Milliseconds 250
     $ws.SendKeys('^v')
     Start-Sleep -Milliseconds 500
@@ -186,7 +225,8 @@ Start-Sleep -Milliseconds 200
 $ws.SendKeys($resolvedUrl)
 Start-Sleep -Milliseconds 200
 $ws.SendKeys('{ENTER}')
-Start-Sleep -Seconds 10
+Start-Sleep -Seconds 8
+Refresh-ChatGptThread -Proc $proc
 
 Invoke-FilePicker -Proc $proc -ResolvedZip $resolvedZip
 Paste-Prompt -Proc $proc -PromptText $promptText

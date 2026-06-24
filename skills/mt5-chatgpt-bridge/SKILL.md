@@ -35,15 +35,17 @@ Run `scripts/run_bridge.ps1`.
 2. Resolve the ZIP path.
 3. Verify the ZIP exists.
 4. Open or focus the target ChatGPT thread in Chrome.
-5. Trigger the file picker and attach the ZIP.
-6. Wait for the attachment chip to appear.
-7. Paste the prompt.
-8. Press Enter unless `-StageOnly` is set.
-9. Save the URL and ZIP path to state.
+5. Refresh the target ChatGPT thread before any paste, to avoid stale-page branching.
+6. Attach the ZIP using the direct file clipboard paste path.
+7. Wait for the attachment chip to appear.
+8. Paste the prompt.
+9. Press Enter unless `-StageOnly` is set.
+10. Save the URL and ZIP path to state.
 
 ## Safety
 
 - Do not create a new ChatGPT chat unless the user explicitly provides a new thread URL.
 - Do not wipe or replace existing conversation context.
+- Refresh the opened target thread before attaching/pasting, so the message lands on the latest conversation state instead of creating a stale branch.
 - Stop if the target URL cannot be resolved.
 - Stop if the ZIP cannot be found.
