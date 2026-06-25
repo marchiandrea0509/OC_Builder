@@ -1,4 +1,4 @@
-Run the periodic maintenance sweep across all active workspaces and only report when attention is needed.
+Run the periodic maintenance sweep across all active workspaces and configured Discord room/thread exports, and only report when attention is needed.
 
 Do exactly this:
 1. Run:
@@ -14,6 +14,8 @@ Do exactly this:
 
 Notes:
 - The script checks every active workspace listed in the shared targets file.
-- The script always refreshes the workspace index artifacts.
+- It always refreshes the workspace index artifacts.
+- Discord room checks are config-driven via `ops/maintenance/discord_targets.json`.
+- Discord thread checks use the exported context file/path configured per target.
 - Compaction only runs when the configured disk-usage threshold is reached.
 - The job should stay quiet on normal runs.

@@ -1,5 +1,10 @@
 {
   "compactThresholdPercent": 82,
   "indexOutputFile": "workspace_index.json",
-  "indexMarkdownFile": "workspace_index.md"
+  "indexMarkdownFile": "workspace_index.md",
+  "discordTargetsFile": "discord_targets.json",
+  "discordRoomContextMessageThreshold": 500,
+  "discordRoomContextCharThreshold": 50000,
+  "discordThreadContextMessageThreshold": 200,
+  "discordThreadContextCharThreshold": 20000
 }
