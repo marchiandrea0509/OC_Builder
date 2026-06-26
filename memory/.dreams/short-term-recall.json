@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-22T18:33:10.014Z",
+  "updatedAt": "2026-06-26T14:35:50.728Z",
   "entries": {
     "memory:memory/2026-04-03.md:1:17": {
       "key": "memory:memory/2026-04-03.md:1:17",
@@ -222,6 +222,37 @@
         "428.53",
         "3.15",
         "6/8"
+      ]
+    },
+    "memory:memory/2026-06-25.md:1:7": {
+      "key": "memory:memory/2026-06-25.md:1:7",
+      "path": "memory/2026-06-25.md",
+      "startLine": 1,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "# 2026-06-25 - Extended `ops/maintenance/workspace_maintenance.py` so the periodic maintenance sweep now supports config-driven Discord room bindings and exported thread context, in addition to Git repo checks. - Added `ops/maintenance/discord_targets.json` as the new target list scaffold and wired `ops/maintenance/maintenance_policy.json` to point at it. - Updated `ops/maintenance/cron_workspace_maintenance.md` to document the Discord maintenance path. - `PROJECT_STATE.md` now reflects that Discord room/thread maintenance is part of the tool.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37396982014179225,
+      "maxScore": 0.37396982014179225,
+      "firstRecalledAt": "2026-06-26T14:35:50.728Z",
+      "lastRecalledAt": "2026-06-26T14:35:50.728Z",
+      "queryHashes": [
+        "41ab03fd75a7"
+      ],
+      "recallDays": [
+        "2026-06-26"
+      ],
+      "conceptTags": [
+        "config-driven",
+        "project-state.md",
+        "room/thread",
+        "extended",
+        "ops",
+        "maintenance",
+        "workspace-maintenance.py",
+        "the"
       ]
     }
   }

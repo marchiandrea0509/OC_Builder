@@ -1,3 +1,47 @@
 {
-  "targets": []
+  "targets": [
+    {
+      "name": "ocbuilder",
+      "kind": "discord-room",
+      "guildId": "1487584401872261323",
+      "channelId": "1487824986990182570",
+      "accountId": "default",
+      "agentId": "ocbuilder",
+      "bindingCheck": true
+    },
+    {
+      "name": "Pine-screener",
+      "kind": "discord-room",
+      "guildId": "1487584401872261323",
+      "channelId": "1487602980093165658",
+      "accountId": "default",
+      "agentId": "tvflow",
+      "bindingCheck": true
+    },
+    {
+      "name": "MT5",
+      "kind": "discord-room",
+      "guildId": "1487584401872261323",
+      "channelId": "1487602981418303719",
+      "accountId": "default",
+      "agentId": "mt5",
+      "bindingCheck": true
+    },
+    {
+      "name": "BITGET Trades",
+      "kind": "discord-room",
+      "guildId": "1487584401872261323",
+      "channelId": "1499631210283008002",
+      "accountId": "default",
+      "bindingCheck": true
+    },
+    {
+      "name": "TV Outcome Feedback Loop",
+      "kind": "discord-room",
+      "guildId": "1487584401872261323",
+      "channelId": "1512319160607314051",
+      "accountId": "default",
+      "bindingCheck": true
+    }
+  ]
 }
