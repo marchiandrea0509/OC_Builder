@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T09:31:20Z",
+  "generatedAt": "2026-06-28T09:31:42Z",
   "overall": "PASS",
   "archiveAgeDays": 30,
   "archiveRoot": "C:\\Users\\anmar\\.openclaw\\workspace-archives",
@@ -47,13 +47,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-tvflow",
       "status": "PASS",
       "notes": [
-        "archived 630 old file(s)",
+        "archived 525 old file(s)",
         "skipped 203 tracked file(s)"
       ],
-      "archivedCount": 630,
-      "archivedBytes": 138112496,
+      "archivedCount": 525,
+      "archivedBytes": 110595842,
       "skippedTrackedCount": 203,
-      "removedEmptyDirs": 123
+      "removedEmptyDirs": 101
     },
     {
       "name": "workspace-server",
