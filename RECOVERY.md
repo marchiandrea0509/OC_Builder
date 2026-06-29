@@ -20,6 +20,16 @@ If you are the next OpenClaw or LLM reading this on a fresh machine, do this in 
 7. Do **not** restart/stop the OpenClaw gateway from a live chat session that depends on it.
 8. After meaningful changes, update `PROJECT_STATE.md` and commit.
 
+## New laptop / installer checklist
+
+- Clone this repo
+- Open the workspace folder
+- Read `AGENTS.md`, `SOUL.md`, `USER.md`, `PROJECT_STATE.md`, `SESSION_START.txt`, `TOOLS.md`
+- Check `memory/` for the latest dated notes
+- Run `git status` and `openclaw status`
+- Confirm `origin` points to GitHub
+- Restore any missing local tools or paths from `TOOLS.md`
+
 ## Backup checklist
 
 - `git add -A`
