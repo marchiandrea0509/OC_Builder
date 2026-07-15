@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T07:02:53Z",
+  "generatedAt": "2026-07-14T19:03:37Z",
   "overall": "FAIL",
   "compactThresholdPercent": 82.0,
   "discordRoomContextMessageThreshold": 500,
@@ -13,13 +13,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace",
       "status": "PASS",
       "notes": [
-        "disk usage 60.39% below threshold"
+        "disk usage 60.68% below threshold"
       ],
       "compacted": false,
       "branch": "main",
       "origin": "https://github.com/marchiandrea0509/openclaw-workspace.git",
       "changeCount": 0,
-      "diskUsagePercent": 60.39
+      "diskUsagePercent": 60.68
     },
     {
       "name": "workspace-ocbuilder",
@@ -27,13 +27,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-ocbuilder",
       "status": "PASS",
       "notes": [
-        "disk usage 60.39% below threshold"
+        "disk usage 60.68% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/OC_Builder.git",
       "changeCount": 0,
-      "diskUsagePercent": 60.39
+      "diskUsagePercent": 60.68
     },
     {
       "name": "workspace-mt5",
@@ -41,13 +41,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-mt5",
       "status": "PASS",
       "notes": [
-        "disk usage 60.39% below threshold"
+        "disk usage 60.68% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/workspace-mt5.git",
       "changeCount": 0,
-      "diskUsagePercent": 60.39
+      "diskUsagePercent": 60.68
     },
     {
       "name": "workspace-tvflow",
@@ -55,13 +55,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-tvflow",
       "status": "PASS",
       "notes": [
-        "disk usage 60.39% below threshold"
+        "disk usage 60.68% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/workspace-tvflow.git",
       "changeCount": 0,
-      "diskUsagePercent": 60.39
+      "diskUsagePercent": 60.68
     },
     {
       "name": "workspace-server",
@@ -69,13 +69,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-server",
       "status": "PASS",
       "notes": [
-        "disk usage 60.39% below threshold"
+        "disk usage 60.68% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/workspace-server.git",
       "changeCount": 0,
-      "diskUsagePercent": 60.39
+      "diskUsagePercent": 60.68
     },
     {
       "name": "summy",
@@ -83,13 +83,13 @@
       "path": "C:\\Users\\anmar\\openclaw_tools\\youtube_transcript",
       "status": "PASS",
       "notes": [
-        "disk usage 60.39% below threshold"
+        "disk usage 60.68% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/summy.git",
       "changeCount": 0,
-      "diskUsagePercent": 60.39
+      "diskUsagePercent": 60.68
     },
     {
       "name": "workspace-llama",
@@ -97,13 +97,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-llama",
       "status": "PASS",
       "notes": [
-        "disk usage 60.39% below threshold"
+        "disk usage 60.68% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/LLama.git",
       "changeCount": 0,
-      "diskUsagePercent": 60.39
+      "diskUsagePercent": 60.68
     },
     {
       "name": "ocbuilder",
