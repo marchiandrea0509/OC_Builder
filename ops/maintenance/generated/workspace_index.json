@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T19:26:35Z",
+  "generatedAt": "2026-07-18T19:00:25Z",
   "overall": "FAIL",
   "compactThresholdPercent": 82.0,
   "discordRoomContextMessageThreshold": 500,
@@ -13,13 +13,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace",
       "status": "PASS",
       "notes": [
-        "disk usage 62.46% below threshold"
+        "disk usage 62.68% below threshold"
       ],
       "compacted": false,
       "branch": "main",
       "origin": "https://github.com/marchiandrea0509/openclaw-workspace.git",
       "changeCount": 0,
-      "diskUsagePercent": 62.46
+      "diskUsagePercent": 62.68
     },
     {
       "name": "workspace-ocbuilder",
@@ -27,13 +27,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-ocbuilder",
       "status": "PASS",
       "notes": [
-        "disk usage 62.46% below threshold"
+        "disk usage 62.68% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/OC_Builder.git",
       "changeCount": 0,
-      "diskUsagePercent": 62.46
+      "diskUsagePercent": 62.68
     },
     {
       "name": "workspace-mt5",
@@ -41,13 +41,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-mt5",
       "status": "PASS",
       "notes": [
-        "disk usage 62.46% below threshold"
+        "disk usage 62.69% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/workspace-mt5.git",
       "changeCount": 0,
-      "diskUsagePercent": 62.46
+      "diskUsagePercent": 62.69
     },
     {
       "name": "workspace-tvflow",
@@ -55,13 +55,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-tvflow",
       "status": "PASS",
       "notes": [
-        "disk usage 62.46% below threshold"
+        "disk usage 62.68% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/workspace-tvflow.git",
       "changeCount": 0,
-      "diskUsagePercent": 62.46
+      "diskUsagePercent": 62.68
     },
     {
       "name": "workspace-server",
@@ -69,27 +69,22 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-server",
       "status": "PASS",
       "notes": [
-        "disk usage 62.46% below threshold"
+        "disk usage 62.67% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/workspace-server.git",
       "changeCount": 0,
-      "diskUsagePercent": 62.46
+      "diskUsagePercent": 62.67
     },
     {
       "name": "summy",
       "kind": "git",
       "path": "C:\\Users\\anmar\\openclaw_tools\\youtube_transcript",
-      "status": "PASS",
-      "notes": [
-        "disk usage 62.46% below threshold"
-      ],
+      "status": "FAIL",
+      "notes": [],
       "compacted": false,
-      "branch": "master",
-      "origin": "https://github.com/marchiandrea0509/summy.git",
-      "changeCount": 0,
-      "diskUsagePercent": 62.46
+      "error": "Path does not exist: C:\\Users\\anmar\\openclaw_tools\\youtube_transcript"
     },
     {
       "name": "workspace-llama",
@@ -97,13 +92,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-llama",
       "status": "PASS",
       "notes": [
-        "disk usage 62.46% below threshold"
+        "disk usage 62.67% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/LLama.git",
       "changeCount": 0,
-      "diskUsagePercent": 62.46
+      "diskUsagePercent": 62.67
     },
     {
       "name": "ocbuilder",
@@ -121,57 +116,64 @@
       "name": "Pine-screener",
       "kind": "discord-room",
       "path": ".",
-      "status": "FAIL",
-      "notes": [],
+      "status": "PASS",
+      "notes": [
+        "discord room binding verified for tvflow",
+        "discord room binding checked; no local context export configured"
+      ],
       "compacted": false,
       "guildId": "1487584401872261323",
       "channelId": "1487602980093165658",
       "threadId": null,
-      "error": "Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds"
+      "bindingOwner": "tvflow"
     },
     {
       "name": "MT5",
       "kind": "discord-room",
       "path": ".",
-      "status": "FAIL",
-      "notes": [],
+      "status": "PASS",
+      "notes": [
+        "discord room binding verified for mt5",
+        "discord room binding checked; no local context export configured"
+      ],
       "compacted": false,
       "guildId": "1487584401872261323",
       "channelId": "1487602981418303719",
       "threadId": null,
-      "error": "Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds"
+      "bindingOwner": "mt5"
     },
     {
       "name": "BITGET Trades",
       "kind": "discord-room",
       "path": ".",
-      "status": "FAIL",
-      "notes": [],
+      "status": "PASS",
+      "notes": [
+        "discord room binding missing from live config",
+        "discord room binding checked; no local context export configured"
+      ],
       "compacted": false,
       "guildId": "1487584401872261323",
       "channelId": "1499631210283008002",
-      "threadId": null,
-      "error": "Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds"
+      "threadId": null
     },
     {
       "name": "TV Outcome Feedback Loop",
       "kind": "discord-room",
       "path": ".",
-      "status": "FAIL",
-      "notes": [],
+      "status": "PASS",
+      "notes": [
+        "discord room binding missing from live config",
+        "discord room binding checked; no local context export configured"
+      ],
       "compacted": false,
       "guildId": "1487584401872261323",
       "channelId": "1512319160607314051",
-      "threadId": null,
-      "error": "Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds"
+      "threadId": null
     }
   ],
   "attention": [
-    "ocbuilder: Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds",
-    "Pine-screener: Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds",
-    "MT5: Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds",
-    "BITGET Trades: Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds",
-    "TV Outcome Feedback Loop: Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds"
+    "summy: Path does not exist: C:\\Users\\anmar\\openclaw_tools\\youtube_transcript",
+    "ocbuilder: Command '['C:\\\\Users\\\\anmar\\\\AppData\\\\Roaming\\\\npm\\\\openclaw.CMD', 'agents', 'bindings', '--json']' timed out after 30 seconds"
   ],
   "needsAttention": true
 }
