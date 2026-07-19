@@ -1,5 +1,5 @@
 # Workspace Archive Cleanup
-Generated: 2026-07-12T09:32:25Z
+Generated: 2026-07-19T09:30:30Z
 Archive age threshold: 30 days
 
 - **workspace**
@@ -31,10 +31,10 @@ Archive age threshold: 30 days
 - **workspace-tvflow**
   - Path: `C:\Users\anmar\.openclaw\workspace-tvflow`
   - Status: PASS
-  - Archived: 513 files / 109.3MB
+  - Archived: 700 files / 108.0MB
   - Skipped tracked: 204
-  - Removed empty dirs: 59
-  - Note: archived 513 old file(s)
+  - Removed empty dirs: 76
+  - Note: archived 700 old file(s)
   - Note: skipped 204 tracked file(s)
 
 - **workspace-server**
@@ -47,11 +47,10 @@ Archive age threshold: 30 days
 
 - **summy**
   - Path: `C:\Users\anmar\openclaw_tools\youtube_transcript`
-  - Status: PASS
+  - Status: FAIL
   - Archived: 0 files / 0B
   - Skipped tracked: 0
   - Removed empty dirs: 0
-  - Note: no old disposable files needed archiving
 
 - **workspace-llama**
   - Path: `C:\Users\anmar\.openclaw\workspace-llama`

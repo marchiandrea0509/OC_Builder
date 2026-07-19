@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-12T09:32:25Z",
-  "overall": "PASS",
+  "generatedAt": "2026-07-19T09:30:30Z",
+  "overall": "FAIL",
   "archiveAgeDays": 30,
   "archiveRoot": "C:\\Users\\anmar\\.openclaw\\workspace-archives",
   "targets": [
@@ -47,13 +47,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-tvflow",
       "status": "PASS",
       "notes": [
-        "archived 513 old file(s)",
+        "archived 700 old file(s)",
         "skipped 204 tracked file(s)"
       ],
-      "archivedCount": 513,
-      "archivedBytes": 114565409,
+      "archivedCount": 700,
+      "archivedBytes": 113256509,
       "skippedTrackedCount": 204,
-      "removedEmptyDirs": 59
+      "removedEmptyDirs": 76
     },
     {
       "name": "workspace-server",
@@ -70,14 +70,13 @@
     {
       "name": "summy",
       "path": "C:\\Users\\anmar\\openclaw_tools\\youtube_transcript",
-      "status": "PASS",
-      "notes": [
-        "no old disposable files needed archiving"
-      ],
+      "status": "FAIL",
+      "notes": [],
       "archivedCount": 0,
       "archivedBytes": 0,
       "skippedTrackedCount": 0,
-      "removedEmptyDirs": 0
+      "removedEmptyDirs": 0,
+      "error": "Path does not exist: C:\\Users\\anmar\\openclaw_tools\\youtube_transcript"
     },
     {
       "name": "workspace-llama",
@@ -93,6 +92,8 @@
       "removedEmptyDirs": 0
     }
   ],
-  "attention": [],
-  "needsAttention": false
+  "attention": [
+    "summy: Path does not exist: C:\\Users\\anmar\\openclaw_tools\\youtube_transcript"
+  ],
+  "needsAttention": true
 }
