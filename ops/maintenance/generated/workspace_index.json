@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T19:00:37Z",
+  "generatedAt": "2026-07-22T07:00:33Z",
   "overall": "FAIL",
   "compactThresholdPercent": 82.0,
   "discordRoomContextMessageThreshold": 500,
@@ -41,13 +41,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-mt5",
       "status": "PASS",
       "notes": [
-        "disk usage 63.40% below threshold"
+        "disk usage 63.39% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/workspace-mt5.git",
       "changeCount": 0,
-      "diskUsagePercent": 63.4
+      "diskUsagePercent": 63.39
     },
     {
       "name": "workspace-tvflow",

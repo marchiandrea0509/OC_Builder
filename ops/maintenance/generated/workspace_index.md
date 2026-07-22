@@ -1,5 +1,5 @@
 # Workspace Index
-Generated: 2026-07-21T19:00:37Z
+Generated: 2026-07-22T07:00:33Z
 Compact threshold: 82%
 
 - **workspace**
@@ -31,9 +31,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-mt5.git`
   - Changes: 0
-  - Disk use: 63.40%
+  - Disk use: 63.39%
   - Compacted: no
-  - Note: disk usage 63.40% below threshold
+  - Note: disk usage 63.39% below threshold
 
 - **workspace-tvflow**
   - Kind: `git`
