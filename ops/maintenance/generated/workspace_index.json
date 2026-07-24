@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T19:00:28Z",
+  "generatedAt": "2026-07-24T07:00:28Z",
   "overall": "FAIL",
   "compactThresholdPercent": 82.0,
   "discordRoomContextMessageThreshold": 500,
@@ -92,13 +92,13 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-llama",
       "status": "PASS",
       "notes": [
-        "disk usage 63.63% below threshold"
+        "disk usage 63.62% below threshold"
       ],
       "compacted": false,
       "branch": "master",
       "origin": "https://github.com/marchiandrea0509/LLama.git",
       "changeCount": 0,
-      "diskUsagePercent": 63.63
+      "diskUsagePercent": 63.62
     },
     {
       "name": "ocbuilder",
