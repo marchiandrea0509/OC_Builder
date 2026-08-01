@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-08-01T08:15:33Z",
+  "overall": "FAIL",
+  "dirtyAttentionThreshold": 25,
+  "untrackedAttentionThreshold": 25,
+  "targets": [
+    {
+      "name": "workspace",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace",
+      "status": "PASS",
+      "notes": [],
+      "dirtyCount": 0,
+      "untrackedCount": 0,
+      "behind": 0,
+      "ahead": 0,
+      "branch": "main",
+      "origin": "https://github.com/marchiandrea0509/openclaw-workspace.git"
+    },
+    {
+      "name": "workspace-ocbuilder",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-ocbuilder",
+      "status": "PASS",
+      "notes": [
+        "2 dirty / 0 untracked file(s)"
+      ],
+      "dirtyCount": 2,
+      "untrackedCount": 0,
+      "behind": 0,
+      "ahead": 0,
+      "branch": "master",
+      "origin": "https://github.com/marchiandrea0509/OC_Builder.git"
+    },
+    {
+      "name": "workspace-mt5",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-mt5",
+      "status": "PASS",
+      "notes": [
+        "28 local commit(s) ahead of upstream"
+      ],
+      "dirtyCount": 0,
+      "untrackedCount": 0,
+      "behind": 0,
+      "ahead": 28,
+      "branch": "master",
+      "origin": "https://github.com/marchiandrea0509/workspace-mt5.git"
+    },
+    {
+      "name": "workspace-tvflow",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-tvflow",
+      "status": "PASS",
+      "notes": [],
+      "dirtyCount": 0,
+      "untrackedCount": 0,
+      "behind": 0,
+      "ahead": 0,
+      "branch": "master",
+      "origin": "https://github.com/marchiandrea0509/workspace-tvflow.git"
+    },
+    {
+      "name": "workspace-server",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-server",
+      "status": "PASS",
+      "notes": [],
+      "dirtyCount": 0,
+      "untrackedCount": 0,
+      "behind": 0,
+      "ahead": 0,
+      "branch": "master",
+      "origin": "https://github.com/marchiandrea0509/workspace-server.git"
+    },
+    {
+      "name": "summy",
+      "path": "C:\\Users\\anmar\\openclaw_tools\\youtube_transcript",
+      "status": "FAIL",
+      "notes": [],
+      "dirtyCount": 0,
+      "untrackedCount": 0,
+      "behind": 0,
+      "ahead": 0,
+      "error": "Path does not exist: C:\\Users\\anmar\\openclaw_tools\\youtube_transcript"
+    },
+    {
+      "name": "workspace-llama",
+      "path": "C:\\Users\\anmar\\.openclaw\\workspace-llama",
+      "status": "PASS",
+      "notes": [],
+      "dirtyCount": 0,
+      "untrackedCount": 0,
+      "behind": 0,
+      "ahead": 0,
+      "branch": "master",
+      "origin": "https://github.com/marchiandrea0509/LLama.git"
+    }
+  ],
+  "attention": [
+    "summy: Path does not exist: C:\\Users\\anmar\\openclaw_tools\\youtube_transcript"
+  ],
+  "needsAttention": true
+}
