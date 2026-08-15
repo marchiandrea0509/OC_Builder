@@ -1,5 +1,5 @@
 # Workspace Index
-Generated: 2026-08-14T19:00:30Z
+Generated: 2026-08-15T07:00:28Z
 Compact threshold: 82%
 
 - **workspace**
@@ -9,9 +9,9 @@ Compact threshold: 82%
   - Branch: `main`
   - Origin: `https://github.com/marchiandrea0509/openclaw-workspace.git`
   - Changes: 0
-  - Disk use: 62.85%
+  - Disk use: 62.54%
   - Compacted: no
-  - Note: disk usage 62.85% below threshold
+  - Note: disk usage 62.54% below threshold
 
 - **workspace-ocbuilder**
   - Kind: `git`
@@ -20,9 +20,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/OC_Builder.git`
   - Changes: 0
-  - Disk use: 62.85%
+  - Disk use: 62.54%
   - Compacted: no
-  - Note: disk usage 62.85% below threshold
+  - Note: disk usage 62.54% below threshold
 
 - **workspace-mt5**
   - Kind: `git`
@@ -31,9 +31,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-mt5.git`
   - Changes: 0
-  - Disk use: 62.85%
+  - Disk use: 62.54%
   - Compacted: no
-  - Note: disk usage 62.85% below threshold
+  - Note: disk usage 62.54% below threshold
 
 - **workspace-tvflow**
   - Kind: `git`
@@ -42,9 +42,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-tvflow.git`
   - Changes: 0
-  - Disk use: 62.85%
+  - Disk use: 62.54%
   - Compacted: no
-  - Note: disk usage 62.85% below threshold
+  - Note: disk usage 62.54% below threshold
 
 - **workspace-server**
   - Kind: `git`
@@ -53,9 +53,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-server.git`
   - Changes: 0
-  - Disk use: 62.84%
+  - Disk use: 62.54%
   - Compacted: no
-  - Note: disk usage 62.84% below threshold
+  - Note: disk usage 62.54% below threshold
 
 - **summy**
   - Kind: `git`
@@ -70,9 +70,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/LLama.git`
   - Changes: 0
-  - Disk use: 62.84%
+  - Disk use: 62.54%
   - Compacted: no
-  - Note: disk usage 62.84% below threshold
+  - Note: disk usage 62.54% below threshold
 
 - **ocbuilder**
   - Kind: `discord-room`
@@ -109,9 +109,7 @@ Compact threshold: 82%
 - **TV Outcome Feedback Loop**
   - Kind: `discord-room`
   - Path: `.`
-  - Status: PASS
+  - Status: FAIL
   - Guild: `1487584401872261323`
   - Channel: `1512319160607314051`
   - Compacted: no
-  - Note: discord room binding missing from live config
-  - Note: discord room binding checked; no local context export configured
