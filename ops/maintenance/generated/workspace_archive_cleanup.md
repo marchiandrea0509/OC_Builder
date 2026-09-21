@@ -1,5 +1,5 @@
 # Workspace Archive Cleanup
-Generated: 2026-09-13T09:30:32Z
+Generated: 2026-09-20T09:30:35Z
 Archive age threshold: 30 days
 
 - **workspace**
@@ -33,7 +33,7 @@ Archive age threshold: 30 days
   - Status: PASS
   - Archived: 0 files / 0B
   - Skipped tracked: 204
-  - Removed empty dirs: 1
+  - Removed empty dirs: 0
   - Note: no old disposable files needed archiving
   - Note: skipped 204 tracked file(s)
 
