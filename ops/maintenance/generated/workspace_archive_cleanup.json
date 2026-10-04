@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T09:30:30Z",
+  "generatedAt": "2026-10-04T09:30:31Z",
   "overall": "FAIL",
   "archiveAgeDays": 30,
   "archiveRoot": "C:\\Users\\anmar\\.openclaw\\workspace-archives",
@@ -47,11 +47,11 @@
       "path": "C:\\Users\\anmar\\.openclaw\\workspace-tvflow",
       "status": "PASS",
       "notes": [
-        "archived 226 old file(s)",
+        "no old disposable files needed archiving",
         "skipped 219 tracked file(s)"
       ],
-      "archivedCount": 226,
-      "archivedBytes": 35294504,
+      "archivedCount": 0,
+      "archivedBytes": 0,
       "skippedTrackedCount": 219,
       "removedEmptyDirs": 4
     },
