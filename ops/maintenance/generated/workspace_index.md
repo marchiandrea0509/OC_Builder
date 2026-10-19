@@ -1,5 +1,5 @@
 # Workspace Index
-Generated: 2026-10-18T07:00:29Z
+Generated: 2026-10-18T19:00:31Z
 Compact threshold: 82%
 
 - **workspace**
@@ -9,9 +9,9 @@ Compact threshold: 82%
   - Branch: `main`
   - Origin: `https://github.com/marchiandrea0509/openclaw-workspace.git`
   - Changes: 0
-  - Disk use: 66.38%
+  - Disk use: 66.14%
   - Compacted: no
-  - Note: disk usage 66.38% below threshold
+  - Note: disk usage 66.14% below threshold
 
 - **workspace-ocbuilder**
   - Kind: `git`
@@ -20,9 +20,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/OC_Builder.git`
   - Changes: 0
-  - Disk use: 66.37%
+  - Disk use: 66.14%
   - Compacted: no
-  - Note: disk usage 66.37% below threshold
+  - Note: disk usage 66.14% below threshold
 
 - **workspace-mt5**
   - Kind: `git`
@@ -31,9 +31,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-mt5.git`
   - Changes: 0
-  - Disk use: 66.37%
+  - Disk use: 66.14%
   - Compacted: no
-  - Note: disk usage 66.37% below threshold
+  - Note: disk usage 66.14% below threshold
 
 - **workspace-tvflow**
   - Kind: `git`
@@ -42,9 +42,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-tvflow.git`
   - Changes: 0
-  - Disk use: 66.37%
+  - Disk use: 66.14%
   - Compacted: no
-  - Note: disk usage 66.37% below threshold
+  - Note: disk usage 66.14% below threshold
 
 - **workspace-server**
   - Kind: `git`
@@ -53,9 +53,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-server.git`
   - Changes: 0
-  - Disk use: 66.37%
+  - Disk use: 66.14%
   - Compacted: no
-  - Note: disk usage 66.37% below threshold
+  - Note: disk usage 66.14% below threshold
 
 - **summy**
   - Kind: `git`
@@ -70,9 +70,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/LLama.git`
   - Changes: 0
-  - Disk use: 66.36%
+  - Disk use: 66.15%
   - Compacted: no
-  - Note: disk usage 66.36% below threshold
+  - Note: disk usage 66.15% below threshold
 
 - **ocbuilder**
   - Kind: `discord-room`
