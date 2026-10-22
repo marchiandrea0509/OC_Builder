@@ -1,5 +1,5 @@
 # Workspace Index
-Generated: 2026-10-21T19:20:23Z
+Generated: 2026-10-22T07:00:34Z
 Compact threshold: 82%
 
 - **workspace**
@@ -19,10 +19,9 @@ Compact threshold: 82%
   - Status: PASS
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/OC_Builder.git`
-  - Changes: 2
+  - Changes: 0
   - Disk use: 65.55%
   - Compacted: no
-  - Note: 2 working-tree changes detected
   - Note: disk usage 65.55% below threshold
 
 - **workspace-mt5**
@@ -43,9 +42,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-tvflow.git`
   - Changes: 0
-  - Disk use: 65.54%
+  - Disk use: 65.55%
   - Compacted: no
-  - Note: disk usage 65.54% below threshold
+  - Note: disk usage 65.55% below threshold
 
 - **workspace-server**
   - Kind: `git`
