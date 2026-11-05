@@ -1,5 +1,5 @@
 # Workspace Index
-Generated: 2026-11-04T08:00:31Z
+Generated: 2026-11-04T20:00:30Z
 Compact threshold: 82%
 
 - **workspace**
@@ -20,9 +20,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/OC_Builder.git`
   - Changes: 0
-  - Disk use: 61.10%
+  - Disk use: 61.11%
   - Compacted: no
-  - Note: disk usage 61.10% below threshold
+  - Note: disk usage 61.11% below threshold
 
 - **workspace-mt5**
   - Kind: `git`
@@ -31,9 +31,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-mt5.git`
   - Changes: 0
-  - Disk use: 61.10%
+  - Disk use: 61.11%
   - Compacted: no
-  - Note: disk usage 61.10% below threshold
+  - Note: disk usage 61.11% below threshold
 
 - **workspace-tvflow**
   - Kind: `git`
@@ -42,9 +42,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-tvflow.git`
   - Changes: 0
-  - Disk use: 61.10%
+  - Disk use: 61.11%
   - Compacted: no
-  - Note: disk usage 61.10% below threshold
+  - Note: disk usage 61.11% below threshold
 
 - **workspace-server**
   - Kind: `git`
@@ -53,9 +53,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-server.git`
   - Changes: 0
-  - Disk use: 61.09%
+  - Disk use: 61.12%
   - Compacted: no
-  - Note: disk usage 61.09% below threshold
+  - Note: disk usage 61.12% below threshold
 
 - **summy**
   - Kind: `git`
@@ -70,9 +70,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/LLama.git`
   - Changes: 0
-  - Disk use: 61.09%
+  - Disk use: 61.12%
   - Compacted: no
-  - Note: disk usage 61.09% below threshold
+  - Note: disk usage 61.12% below threshold
 
 - **ocbuilder**
   - Kind: `discord-room`
