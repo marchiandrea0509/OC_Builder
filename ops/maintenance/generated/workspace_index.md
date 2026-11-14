@@ -1,5 +1,5 @@
 # Workspace Index
-Generated: 2026-11-13T08:00:27Z
+Generated: 2026-11-13T20:00:28Z
 Compact threshold: 82%
 
 - **workspace**
@@ -9,9 +9,9 @@ Compact threshold: 82%
   - Branch: `main`
   - Origin: `https://github.com/marchiandrea0509/openclaw-workspace.git`
   - Changes: 0
-  - Disk use: 61.73%
+  - Disk use: 61.72%
   - Compacted: no
-  - Note: disk usage 61.73% below threshold
+  - Note: disk usage 61.72% below threshold
 
 - **workspace-ocbuilder**
   - Kind: `git`
@@ -53,9 +53,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-server.git`
   - Changes: 0
-  - Disk use: 61.72%
+  - Disk use: 61.73%
   - Compacted: no
-  - Note: disk usage 61.72% below threshold
+  - Note: disk usage 61.73% below threshold
 
 - **summy**
   - Kind: `git`
@@ -70,9 +70,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/LLama.git`
   - Changes: 0
-  - Disk use: 61.72%
+  - Disk use: 61.73%
   - Compacted: no
-  - Note: disk usage 61.72% below threshold
+  - Note: disk usage 61.73% below threshold
 
 - **ocbuilder**
   - Kind: `discord-room`
