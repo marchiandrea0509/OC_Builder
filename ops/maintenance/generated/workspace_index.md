@@ -1,5 +1,5 @@
 # Workspace Index
-Generated: 2026-11-27T08:00:30Z
+Generated: 2026-11-27T20:00:29Z
 Compact threshold: 82%
 
 - **workspace**
@@ -53,9 +53,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/workspace-server.git`
   - Changes: 0
-  - Disk use: 57.65%
+  - Disk use: 57.66%
   - Compacted: no
-  - Note: disk usage 57.65% below threshold
+  - Note: disk usage 57.66% below threshold
 
 - **summy**
   - Kind: `git`
@@ -70,9 +70,9 @@ Compact threshold: 82%
   - Branch: `master`
   - Origin: `https://github.com/marchiandrea0509/LLama.git`
   - Changes: 0
-  - Disk use: 57.65%
+  - Disk use: 57.66%
   - Compacted: no
-  - Note: disk usage 57.65% below threshold
+  - Note: disk usage 57.66% below threshold
 
 - **ocbuilder**
   - Kind: `discord-room`
